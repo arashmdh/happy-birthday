@@ -124,11 +124,12 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 41.5%;
-  /* transform: scale(0.1); */
+  width: 100px; /* Make the hat bigger */
+  top: -50px; /* Move the hat up */
+  left: 49%; /* Position the hat in the center */
+  transform: translateX(-50%); /* Adjust to center it perfectly */
 }
+
 
 .baloons img {
   display: inline-block;
@@ -232,30 +233,6 @@ body {
   cursor: pointer;
 }
 
-/* Media Queries */
-@media screen and (max-height: 1000px) {
-  .six .hat {
-    left: 40%;
-  }
-}
-
-@media screen and (max-height: 800px) {
-  .six .hat {
-    left: 37%;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .six .hat {
-    left: 32%;
-  }
-}
-
-@media screen and (max-height: 850px) and (max-width: 450px) {
-  .six .hat {
-    left: 32%;
-  }
-}
 
 @media screen and (max-width: 500px) {
   .container {
@@ -280,9 +257,13 @@ body {
   }
 
   .six .hat {
-    width: 50px;
-    top: -20px;
-  }
+    position: absolute;
+    width: 50px; /* Make the hat smaller */
+    top: -20px; /* Move the hat up */
+    left: 49%; /* Position the hat in the center */
+    transform: translateX(-50%); /* Adjust to center it perfectly */
+}
+
 
   .wish-hbd {
     font-size: 2.2em;
@@ -297,3 +278,13 @@ body {
     font-weight: lighter;
   }
 }
+
+.lydia-dp {
+  width: 36%; /* Adjust the width to make it smaller */
+  height: auto; /* Keep the height proportional */
+  max-width: 150px; /* Optionally set a max-width */
+  padding: 5px; /* Adjust padding if necessary */
+  font-size: 0.9em; /* Reduce the font size if it's text-based */
+  margin-top: 60px; /* Move the element 30px down */
+}
+
